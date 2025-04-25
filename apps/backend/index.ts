@@ -1,11 +1,30 @@
 import express from "express";
 const PORT = process.env.PORT || 8080;
+import { TrainModel, GenerateImage, GenerateImagesFromPack} from "common/types";
+
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.post("/ai/training", (req, res) => {
+
+})
+
+app.post("/ai/generate", (req, res) => {
+
+})
+
+app.post("/pack/generate", (req, res) => {
+
+})
+  
+app.get("/pack/bulk", (req, res) => {
+  
 });
+
+app.get("/image", (req, res) => {
+  
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-});
+}); 
